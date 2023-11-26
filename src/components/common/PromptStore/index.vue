@@ -337,7 +337,7 @@ const dataSource = computed(() => {
           >
             <div class="flex items-center space-x-4">
               <NButton
-                type="primary"
+                
                 size="small"
                 @click="changeShowModal('add')"
               >
@@ -453,7 +453,7 @@ const dataSource = computed(() => {
       <NInput v-model:value="tempPromptValue" type="textarea" />
       <NButton
         block
-        type="primary"
+        type="info"
         :disabled="inputStatus"
         @click="() => { modalMode === 'add' ? addPromptTemplate() : modifyPromptTemplate() }"
       >
@@ -469,7 +469,7 @@ const dataSource = computed(() => {
       />
       <NButton
         block
-        type="primary"
+        type="info"
         :disabled="inputStatus"
         @click="() => { importPromptTemplate('local') }"
       >

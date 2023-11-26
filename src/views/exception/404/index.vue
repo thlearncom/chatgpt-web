@@ -23,7 +23,7 @@ function goHome() {
           <img src="../../../icons/404.svg" alt="404">
         </div>
       </div>
-      <NButton type="primary" @click="goHome">
+      <NButton type="info" @click="goHome">
         Go to Home
       </NButton>
     </div>

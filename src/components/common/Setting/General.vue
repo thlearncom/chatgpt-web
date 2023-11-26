@@ -130,7 +130,7 @@ function handleImportButtonClick(): void {
         <div class="flex-1">
           <NInput v-model:value="avatar" placeholder="" />
         </div>
-        <NButton size="tiny" text type="primary" @click="updateUserInfo({ avatar })">
+        <NButton size="tiny" text type="info" @click="updateUserInfo({ avatar })">
           {{ $t('common.save') }}
         </NButton>
       </div>
@@ -139,7 +139,7 @@ function handleImportButtonClick(): void {
         <div class="w-[200px]">
           <NInput v-model:value="name" placeholder="" />
         </div>
-        <NButton size="tiny" text type="primary" @click="updateUserInfo({ name })">
+        <NButton size="tiny" text type="info" @click="updateUserInfo({ name })">
           {{ $t('common.save') }}
         </NButton>
       </div>
@@ -148,7 +148,7 @@ function handleImportButtonClick(): void {
         <div class="flex-1">
           <NInput v-model:value="description" placeholder="" />
         </div>
-        <NButton size="tiny" text type="primary" @click="updateUserInfo({ description })">
+        <NButton size="tiny" text type="info" @click="updateUserInfo({ description })">
           {{ $t('common.save') }}
         </NButton>
       </div>
@@ -193,7 +193,7 @@ function handleImportButtonClick(): void {
           <template v-for="item of themeOptions" :key="item.key">
             <NButton
               size="small"
-              :type="item.key === theme ? 'primary' : undefined"
+              :type="item.key === theme ? 'info' : undefined"
               @click="appStore.setTheme(item.key)"
             >
               <template #icon>

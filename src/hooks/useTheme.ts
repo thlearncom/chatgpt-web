@@ -20,12 +20,12 @@ export function useTheme() {
   })
 
   const themeOverrides = computed<GlobalThemeOverrides>(() => {
-    if (isDark.value) {
-      return {
-        common: {},
-      }
+    const overrides: GlobalThemeOverrides = {
+      common: {
+        primaryColor: '#2080F0', 
+      },
     }
-    return {}
+    return overrides
   })
 
   watch(

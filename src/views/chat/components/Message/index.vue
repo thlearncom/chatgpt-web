@@ -1,7 +1,7 @@
 <script setup lang='ts'>
 import { computed, ref } from 'vue'
 import { NDropdown, useMessage } from 'naive-ui'
-import AvatarComponent from './Avatar.vue'
+// import AvatarComponent from './Avatar.vue'
 import TextComponent from './Text.vue'
 import { SvgIcon } from '@/components/common'
 import { useIconRender } from '@/hooks/useIconRender'
@@ -98,16 +98,16 @@ async function handleCopy() {
     class="flex w-full mb-6 overflow-hidden"
     :class="[{ 'flex-row-reverse': inversion }]"
   >
-    <div
+    <!-- <div
       class="flex items-center justify-center flex-shrink-0 h-8 overflow-hidden rounded-full basis-8"
       :class="[inversion ? 'ml-2' : 'mr-2']"
     >
       <AvatarComponent :image="inversion" />
-    </div>
+    </div> -->
     <div class="overflow-hidden text-sm " :class="[inversion ? 'items-end' : 'items-start']">
-      <p class="text-xs text-[#b4bbc4]" :class="[inversion ? 'text-right' : 'text-left']">
+      <!-- <p class="text-xs text-[#b4bbc4]" :class="[inversion ? 'text-right' : 'text-left']">
         {{ dateTime }}
-      </p>
+      </p> -->
       <div
         class="flex items-end gap-1 mt-2"
         :class="[inversion ? 'flex-row-reverse' : 'flex-row']"

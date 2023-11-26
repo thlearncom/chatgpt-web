@@ -35,7 +35,7 @@ function handleReset() {
         <div class="flex-1">
           <NInput v-model:value="systemMessage" type="textarea" :autosize="{ minRows: 1, maxRows: 4 }" />
         </div>
-        <NButton size="tiny" text type="primary" @click="updateSettings({ systemMessage })">
+        <NButton size="tiny" text type="info" @click="updateSettings({ systemMessage })">
           {{ $t('common.save') }}
         </NButton>
       </div>
@@ -45,7 +45,7 @@ function handleReset() {
           <NSlider v-model:value="temperature" :max="2" :min="0" :step="0.1" />
         </div>
         <span>{{ temperature }}</span>
-        <NButton size="tiny" text type="primary" @click="updateSettings({ temperature })">
+        <NButton size="tiny" text type="info" @click="updateSettings({ temperature })">
           {{ $t('common.save') }}
         </NButton>
       </div>
@@ -55,7 +55,7 @@ function handleReset() {
           <NSlider v-model:value="top_p" :max="1" :min="0" :step="0.1" />
         </div>
         <span>{{ top_p }}</span>
-        <NButton size="tiny" text type="primary" @click="updateSettings({ top_p })">
+        <NButton size="tiny" text type="info" @click="updateSettings({ top_p })">
           {{ $t('common.save') }}
         </NButton>
       </div>

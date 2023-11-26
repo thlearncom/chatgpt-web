@@ -30,8 +30,8 @@ export default {
   },
   chat: {
     newChatButton: '新建聊天',
-    placeholder: '来说点什么吧...（Shift + Enter = 换行，"/" 触发提示词）',
-    placeholderMobile: '来说点什么...',
+    placeholder: 'Send a message...（Shift + Enter = 换行，"/" 触发提示词）',
+    placeholderMobile: 'Send a message...',
     copy: '复制',
     copied: '复制成功',
     copyCode: '复制代码',
@@ -75,7 +75,7 @@ export default {
     monthlyUsage: '本月使用量',
   },
   store: {
-    siderButton: '提示词商店',
+    siderButton: 'Prompt商店',
     local: '本地',
     online: '在线',
     title: '标题',
