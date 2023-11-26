@@ -16,8 +16,8 @@ export function defaultSetting(): UserState {
   return {
     userInfo: {
       avatar: '',
-      name: 'MOBING',
-      description: 'Powered by ChatGPT',
+      name: 'ChatGPT',
+      description: 'Designed by MOBING',
     },
   }
 }
