@@ -108,7 +108,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="text-black" :class="wrapClass">
+  <div :class="wrapClass">
     <div ref="textRef" class="leading-relaxed break-words">
       <div v-if="!inversion">
         <div v-if="!asRawText" class="markdown-body" :class="{ 'markdown-body-generate': loading }" v-html="text" />
