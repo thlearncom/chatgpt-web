@@ -49,7 +49,7 @@ const wrapClass = computed(() => {
     // props.inversion ? 'dark:bg-[#a1dc95]' : 'dark:bg-[#1e1e20]',
     //对话框的颜色，我的：gpt的
     props.inversion ? 'bg-[#8fbff7]' : 'bg-[#f4f6f8]',
-    props.inversion ? 'dark:bg-[#1e1e20]' : 'dark:bg-[#1e1e20]',
+    props.inversion ? 'dark:bg-[#446377]' : 'dark:bg-[#1e1e20]',
     props.inversion ? 'message-request' : 'message-reply',
     { 'text-red-500': props.error },
   ]
@@ -108,7 +108,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div :class="wrapClass">
+  <div class="text-black" :class="wrapClass">
     <div ref="textRef" class="leading-relaxed break-words">
       <div v-if="!inversion">
         <div v-if="!asRawText" class="markdown-body" :class="{ 'markdown-body-generate': loading }" v-html="text" />
