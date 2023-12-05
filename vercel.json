@@ -1,0 +1,30 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node",
+        "config": {
+          "distDir": "build"
+        }
+      },
+      {
+        "src": "service/package.json",
+        "use": "@vercel/node",
+        "config": {
+          "distDir": "service/build"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/service/(.*)",
+        "dest": "/service/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/public/$1"
+      }
+    ]
+  }
+  
